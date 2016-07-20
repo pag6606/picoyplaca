@@ -1,24 +1,14 @@
-# README
+# Pico y placa 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Validador de pico y placa desarrollado en Ruby on rails.
+Usa como parametros de entrada el número de placa y la fecha que se desea consultar.
+Para acceder se debe acceder a través de placa/new, levantando el servidor de rails, esta utilizando una base de prueba sqlite.
 
-Things you may want to cover:
 
-* Ruby version
+* Ruby version 2.3.0
 
-* System dependencies
+* Rails version 5.0.0
 
-* Configuration
+* Database Sqlite3
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
