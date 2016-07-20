@@ -1,0 +1,33 @@
+<h1>Consulta de placas</h1>
+<p>Ingrese el número de placa que desea consultar</p>
+<%= form_for @placa do |f | -%>
+	Placa: <%= f.text_field :plate_number %> <br>
+	fecha: <%= f.date_field :date %> <br>
+
+	<%= f.submit  "Consultar Placa"%>
+<% end -%>
+<hr>
+<h2>Placas consultadas :</h2><br>
+<hr>
+<% if !@placas.blank? %>
+	<table>
+	<thead>
+		<th>Placa</th>
+		<th>Fecha</th>
+		
+		<th>Circula</th>
+	</thead>
+	
+	<% for item in @placas %>
+		<tr>
+		<td><%= item.plate_number  %></td>
+		<td><%= item.date  %></td>
+		<td><%= item.road  %></td>
+		
+		</tr>
+	<% end %>
+	</table>
+<% else %>
+
+<% end %>
+
